@@ -1,10 +1,3 @@
-/**
-* Template Name: Sailor - v4.9.1
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -371,7 +364,7 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(30, 35, 40, 0.6);
+  /* background-color: rgba(30, 35, 40, 0.6); */
 }
 
 #hero .carousel-container {
@@ -504,6 +497,7 @@ h6 {
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
+    margin-top: 20rem;
   }
 }
 
@@ -585,23 +579,27 @@ section {
   font-weight: 700;
   font-size: 40px;
 }
-.headingLine{
+
+.headingLine {
   margin: 0;
   padding: 18px 0;
   background: #f8f9fa;
   min-height: 40px;
 }
-.headingLine h1{
+
+.headingLine h1 {
   color: #f93348;
   font-weight: 700;
   font-size: 40px;
 }
-.headingLine span{
+
+.headingLine span {
   color: #8f8da3;
   font-size: 16px;
   line-height: 1.5;
   font-family: 'Cabin', sans-serif;
 }
+
 .breadcrumbs h2 {
   font-size: 32px;
   font-weight: 300;
@@ -656,23 +654,27 @@ section {
 #about {
   background-color: #f8f9fa;
 }
-.about .content img{
+
+.about .content img {
   border-radius: 20px;
 }
+
 .about .content h1 {
   color: #3b4754;
-    font-size: 45px;
-    font-weight: 700;
-    margin: 15px 0 30px;
+  font-size: 45px;
+  font-weight: 700;
+  margin: 15px 0 30px;
 }
-.about .content p{
+
+.about .content p {
   font-size: 18px;
   color: #8f8da3;
   line-height: 1.5;
   font-family: 'Cabin', sans-serif;
 }
-.about .content .aboutBtn{
-  background:#e24d55;
+
+.about .content .aboutBtn {
+  background: #e24d55;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px 9px 25px;
@@ -710,6 +712,30 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+#collectiveActions {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 170px 0 170px;
+  overflow: hidden;
+}
+
+#collectiveActions #textDiv {
+  margin-left: 5rem;
+}
+
+#collectiveActions #textDiv h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #collectiveActions #textDiv {
+    margin-left: 2rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1020,13 +1046,14 @@ section {
   margin-bottom: 1rem;
 }
 
-.team .member .teamBtn{
-  background:#e24d55;
+.team .member .teamBtn {
+  background: #e24d55;
   color: #fff;
   border-radius: 50px;
-  padding: 8px 25px 9px 25px;
+  padding: 8px 22px 9px 25px;
   font-size: 14px;
 }
+
 .team .member p {
   margin: 10px 0 0 0;
   font-size: 14px;
@@ -1062,6 +1089,12 @@ section {
 
 .team .member .social a+a {
   margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .theNeedWrap .row #emailID a {
+    font-size: 15px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1340,7 +1373,8 @@ section {
   margin: 0;
 }
 
-.testimonials .container .row .col-lg-12 .card .col-md-4 p,.testimonials .container .row .col-lg-8 .card .col-md-4 p{
+.testimonials .container .row .col-lg-12 .card .col-md-4 p,
+.testimonials .container .row .col-lg-8 .card .col-md-4 p {
   margin: 1rem 0 0 5rem;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -1348,7 +1382,8 @@ section {
   color: #e1444d;
 }
 
-.testimonials .container .row .col-lg-12 .card .col-md-8 h5,.testimonials .container .row .col-lg-8 .card .col-md-8 h5{
+.testimonials .container .row .col-lg-12 .card .col-md-8 h5,
+.testimonials .container .row .col-lg-8 .card .col-md-8 h5 {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 500;
@@ -1429,16 +1464,16 @@ section {
   color: #fff;
 }
 
-.contact .php-email-form {
+.contact .php-email-form,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form {
   width: 100%;
   background: #fff;
 }
 
-.contact .php-email-form .form-group {
+.contact .php-email-form .form-group,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.contact .php-email-form .error-message,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .error-message{
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1447,11 +1482,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br+br,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .error-message br+br{
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .php-email-form .sent-message,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .sent-message{
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1460,14 +1495,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .php-email-form .loading,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .loading{
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .php-email-form .loading:before,.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form .loading:before{
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1481,7 +1516,10 @@ section {
 }
 
 .contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .php-email-form textarea,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form input,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form textarea
+{
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1489,19 +1527,25 @@ section {
 }
 
 .contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .php-email-form textarea:focus,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form input:focus,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form textarea:focus
+{
   border-color: #d9232d;
 }
 
-.contact .php-email-form input {
+.contact .php-email-form input,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form input{
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .php-email-form textarea,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form textarea{
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type=submit] ,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form button[type=submit]{
   background: #d9232d;
   border: 0;
   padding: 10px 24px;
@@ -1510,7 +1554,8 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=submit]:hover ,
+.portfolio-details .container .row .col-lg-8 .portfolio-description .php-email-form button[type=submit]:hover{
   background: #e24d55;
 }
 
